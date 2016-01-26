@@ -1,0 +1,74 @@
+.btn-holder {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#signin-btn {
+  outline: none;
+}
+
+body {
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+#name-space {
+  margin-bottom: 50px;
+}
+
+#signin-form {
+  display: none;
+}
+
+#profile-content {
+  display: none;
+}
+
+.signin-btn {
+  background: #82BF56;
+  text-shadow: 0px -1px #669644;
+  border-bottom: 2px solid #669644;
+}
+
+.cancel-btn {
+  background: #C63A3A;
+  text-shadow: 0px -1px #964453;
+  border-bottom: 2px solid #964453;
+}
+
+.main-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1em 3em;
+  position: relative;
+  transition: 0.4s;
+  border-radius: 0.5em;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.main-btn:after {
+  content: '';
+  position: absolute;
+  top: 110%;
+  left: 10%;
+  width: 80%;
+  height: 20px;
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.15) 0%,rgba(0,0,0,0) 60%);
+  opacity: 0;
+  transition: 0.4s;
+  transform: translateY(-20px);
+}
+
+.main-btn:hover {
+  transform: translateY(-20px);
+}
+
+.main-btn:hover:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.main-btn:focus, .main-btn:active, .main-btn:hover {
+  outline: none;
+}

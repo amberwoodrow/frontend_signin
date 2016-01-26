@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sign in!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <section id="signin-content">
+      <section id="signin-form">
+        <nav>
+          <form id="main-form" class="form-inline">
+            <section class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Ben Franklin" required>
+            </section>
+            <section class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </section>
+            <button type="submit" class="btn btn-default">Sign in</button>
+        	</form>
+        </nav>
+      </section>
+
+      <section class="container">
+        <section class="btn-holder">
+          <button type="button" class="btn signin-btn main-btn" id="signin-btn">Sign in</button>
+        </section>
+      </section>
+    </section>
+
+    <section id="profile-content">
+      <h3 id="name-space"></h3>
+      <button type="button" class="btn signin-btn main-btn" id="logout">Logout</button>
+    </section>
+
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
